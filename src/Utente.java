@@ -49,6 +49,12 @@ public class Utente {
         this.peso = peso;
     }
 
+
+    // IMC
+    public float calcularIMC() {
+        return peso / (altura * altura);
+    }
+
     @Override
     public String toString() {
         return "Utente{" +
@@ -57,6 +63,7 @@ public class Utente {
                 ", idade=" + idade +
                 ", altura=" + altura +
                 ", peso=" + peso +
+                ", IMC=" + calcularIMC() +
                 '}';
     }
 }
